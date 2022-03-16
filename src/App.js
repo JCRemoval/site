@@ -14,7 +14,7 @@ function App() {
             <h1  className='under-c'>Under Construction</h1>
             <h2 className='contact'>Contact Us</h2>
             <p>661-505-5297</p>
-            <a href='mailto:jcremoval.contact@gmail.com' target='_blank'>jcremoval.contact@gmail.com</a>
+            <a href='mailto:jcremoval.contact@gmail.com' target='_blank' rel='noreferrer'>jcremoval.contact@gmail.com</a>
             <a href='https://www.instagram.com/jc_removal/'><img className='insta' src={insta} alt='instagram'/></a>
         </div>
     </div>
