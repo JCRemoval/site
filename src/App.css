@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Spectral+SC:wght@200;300;400;500;600&display=swap');
+
+.App{
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  overflow: hidden;
+}
+a{
+  text-decoration-color: rgba(0,0,0,0);
+  color: black;
+  display: block;
+  transition: text-decoration-color 0.3s;
+}
+a:hover{
+  text-decoration-color: rgba(0,0,0,1);
+}
+.color-overlay{
+  height: 100%;
+}
+.title{
+  margin-bottom: 0;
+  line-height: 1rem;
+}
+.under-c{
+  margin-top: 0;
+}
+.contact{
+  margin-bottom: 0;
+}
+
+.info-div h1, h2{
+  font-family: 'Bayon', sans-serif;
+}
+.info-div{
+  font-family: 'Spectral SC', serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.info-div p, .info-div a{
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.info-div h2{
+  margin-top: 5rem;
+}
+.insta{
+  margin: 0.25rem;
+  height: 2.5rem;
+  transform: rotate(0);
+  transition: transform 0.2s ease-in-out;
+  /* position: absolute;
+  bottom: 1rem;
+  left: 1rem; */
+}
+.insta:hover{
+  transform: rotate(10deg);
+}
+.img-overlay{
+  height: 100vh;
+  background: linear-gradient(60deg, rgba(0,0,0,0.9107843821122199) 0%, rgba(0,0,0,1) 100%);
+}
+.bg-image{
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  filter: blur(0.25rem);
+}
+@media only screen and (min-width: 500px) {
+  .info-div p, .info-div a{
+    font-size: 1.25rem;
+  }
+  .info-div .contact, .info-div .title{
+    font-size: 2rem;
+  }
+  .info-div .under-c{
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px){
+  .info-div p, .info-div a{
+    font-size: 1.5rem;
+  }
+  .info-div .contact, .info-div .title{
+    font-size: 3rem;
+  }
+  .info-div .under-c{
+    font-size: 4rem;
+  }
+}
