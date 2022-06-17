@@ -4,6 +4,7 @@ import '../pages/css/ourServices.css';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 import Helmet from 'react-helmet';
 
@@ -32,7 +33,7 @@ function OurServices(){
                                 <li>Jungle Gyms</li>
                                 <li>Fencing</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
@@ -47,7 +48,7 @@ function OurServices(){
                                 <li>Stoves</li>
                                 <li>& more</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
@@ -61,7 +62,7 @@ function OurServices(){
                                 <li>Tree Trimmings</li>
                                 <li>& more</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
@@ -75,7 +76,7 @@ function OurServices(){
                                 <li>Concrete</li>
                                 <li>& more</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
@@ -89,7 +90,7 @@ function OurServices(){
                                 <li>Backyards</li>
                                 <li>Basements</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
@@ -103,7 +104,7 @@ function OurServices(){
                                 <li>Bathrooms</li>
                                 <li>Storages</li>
                             </ul>
-                            <a href='tel:16615055297' className='quoteBtn'>Get a Quote</a>
+                            <Link className='quoteBtn' to='/contact'>Get A Quote</Link>
                         </div>
                     </div>
 
