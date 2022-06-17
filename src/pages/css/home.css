@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+body{
+    background-color: rgb(225, 225, 205);
+}
+
+
+.Home{
+    position: relative;
+    min-height: 100vh;
+    max-height: fit-content;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.Home .main-cont{
+    height: 100%;
+    position: relative; /*  keeps footer where it should be  */  
+    margin: 0;
+}
+/*  v hero image v  */
+.Home .hero-img .small{
+    display: block;
+    height: 400px;
+    filter: brightness(50%);
+}
+.Home .hero-img .large{
+    display: none;
+    filter: brightness(50%);
+}
+.Home .hero-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.Home .hero-text{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    /* transform: translate(-50%, -10%); */
+    color: white;
+    text-align: left;
+    margin: auto;
+}
+.Home .hero-text p{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    max-width: 500px;
+    font-size: 1.3rem;
+}
+.Home .hero-text a{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: #0047ba;
+    margin: 1rem auto 0 auto;
+    padding: 0.75rem 0.75rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+.Home .hero-text a img{
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+.Home .hero-text a:active{
+    transform: scale(0.95);
+}
+/*  ^ hero image ^  */
+
+/*  v choose us v  */
+
+.Home .choose-us{
+    padding: 3rem 0;
+}
+.Home .choose-us h2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.Home .choose-us .grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.Home .grid-item{
+    width: fit-content;
+    max-width: 500px;
+    height: fit-content;
+    position: relative;
+    margin: 0.5rem 1rem;
+}
+.Home .grid-item img{
+    border-radius: 2px 2px 0 0;
+    width: 100%;
+}
+.Home .text{
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 2px 2px;
+    height: 120px;
+    padding: 1rem 1rem;
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+}
+.Home .text p{
+    font-size: 1.125rem;
+    height: fit-content;
+    align-self: center;
+}
+.Home .choose-us a{
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #0047ba;
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.Home .choose-us a:active{
+    transform: scale(.95);
+}
+/*  ^ choose us ^  */
+
+
+/* v Review v */
+
+.Home .reviews{
+    color: white;
+    background-color: #0b870b;
+    padding: 3rem 1rem 1rem 1rem;
+}
+.Home .reviews h2{
+    color: white;
+}
+
+/* ^ Review ^ */
+
+/* v Updates v */
+.Home .updates{
+    padding: 3rem 0;
+}
+.Home .updates h2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+/* ^ Updates ^ */
+
+@media only screen and (max-width: 450px) {
+    .Home .hero-text{
+        width: 80%;
+    }
+    .Home .hero-text p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .Home .hero-text{
+        text-align: left;
+    }
+    .Home .hero-text a{
+        width: fit-content;
+        margin: 1rem auto 0 0;
+    }
+    .Home .hero-text p{
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Home .hero-text p{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 850px) {
+    .Home .hero-img .large{
+        display: block;
+    }
+    .Home .hero-img .small{
+        display: none;
+    }
+}
+@media only screen and (min-width: 864px) {
+    .Home .grid-item{
+        width: 400px;
+    }
+    .Home .grid-item img{
+        width: 400px;
+    }
+    .Home .grid-item .text{
+        width: 400px;
+        height: 100px;
+    }
+}

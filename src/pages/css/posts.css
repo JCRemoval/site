@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+.Post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Post .post-cont{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    margin: 1rem 0;
+}
+.Post .post-cont img{
+    width: 100%;
+    max-width: 500px;
+}
+.Post .post-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 1rem;
+}
+.Post .post-cont h3{
+    color: black;
+}
+.Post .post-cont p{
+    text-align: center;
+}
+.Post .post-cont span{
+
+}
+@media only screen and (min-width: 500px) {
+    .Post .post-cont{
+        box-shadow: 2px 2px 15px gray;
+        border-radius: 2px;
+        width: 500px;
+        margin: 1rem 3rem;
+    }
+    .Post .post-cont img{
+        border-radius: 2px 2px 0 0;
+    }
+    .Post .post-text{
+        border-radius: 0 0 2px 2px;
+    }
+}

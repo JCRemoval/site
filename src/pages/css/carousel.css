@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+.carousel-item-container{
+    width: 60%;
+    margin: 2rem auto 3rem auto;
+    color: white;
+}
+.carousel-item-container .scrollable{
+    display: table-cell;
+    height: 150px;
+    min-width: 60%;
+    width: 900px;
+    vertical-align: middle;
+    text-align: center;
+}
+.carousel-item-container .review-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.15rem;
+    text-align: center;
+    color: white;
+    overflow-y: auto;
+    max-height: 150px;
+    width: 100%;
+    margin: 0 auto;
+}
+.carousel-item-container .review-author{
+    font-size: 1.1rem;
+}
+.carousel-item-container span img:last-child{
+    margin: 0;
+}
+.carousel-item-container span img{
+    margin-right: 5px; 
+}
+@media only screen and (min-width: 725px) {
+    .carousel-item-container .review-text{
+        overflow-y: auto;
+    }
+}

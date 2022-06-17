@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
+
+.Gallery{
+    height: 100%;
+    position: relative;
+}
+.Gallery .main-cont{
+    width: 100%;
+    min-height: 800px;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+.Gallery .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+}
+.Gallery .grid img{
+    width: 100%;
+    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.Gallery .main-cont h2{
+    font-weight: 600;
+    color: white;
+    margin: 0 0 3rem 0;
+    text-align: center;
+    padding: 3rem;
+    background-color: #0b870b;
+}
+
+@media only screen and (min-width: 800px) {
+    .Gallery .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.1rem;
+    }
+    .Gallery .main-cont{
+        width: 100%;
+    }
+    .Gallery .grid img{
+        height: 95%;
+        width: 95%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .Gallery .main-cont{
+        width: 100%;
+    }
+    .Gallery .grid img{
+        height: 100%;
+        width: 100%;
+    }
+    .Gallery .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
